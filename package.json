@@ -1,0 +1,26 @@
+{
+  "name": "goindex-quick-install",
+  "version": "0.0.1",
+  "description": "This is a simple website to help you get started with GoIndex-theme-acrou.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "xfetch-js": "^0.5.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
