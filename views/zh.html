@@ -140,7 +140,10 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="(root,index) in indexConfig.roots" :key="index">
+                      <tr
+                        v-for="(root,index) in indexConfig.roots"
+                        :key="index"
+                      >
                         <td>
                           <input
                             class="input is-small"
@@ -188,15 +191,24 @@
                       <label class="label">渲染选项</label>
                       <div class="control">
                         <label class="checkbox">
-                          <input type="checkbox" v-model="options.render.head_md" />
+                          <input
+                            type="checkbox"
+                            v-model="options.render.head_md"
+                          />
                           HEAD.md
                         </label>
                         <label class="checkbox">
-                          <input type="checkbox" v-model="options.render.readme_md" />
+                          <input
+                            type="checkbox"
+                            v-model="options.render.readme_md"
+                          />
                           README.md
                         </label>
                         <label class="checkbox">
-                          <input type="checkbox" v-model="options.render.desc" />
+                          <input
+                            type="checkbox"
+                            v-model="options.render.desc"
+                          />
                           File/Folder description
                         </label>
                         <p class="help has-text-grey">
@@ -205,14 +217,18 @@
                       </div>
                     </div>
                   </div>
-                  <div class="column is-one-quarter">
+                  <div class="column is-one-fifth">
                     <div class="field">
-                      <label class="label">Version</label>
+                      <label class="label">版本</label>
                       <div class="control">
                         <div class="select">
                           <select v-model="options.version">
-                            <option v-for="(version,index) in versions" :key="index" :value="version" :label="version"
-                              />
+                            <option
+                              v-for="(version,index) in versions"
+                              :key="index"
+                              :value="version"
+                              :label="version"
+                            />
                           </select>
                         </div>
                       </div>
