@@ -17,7 +17,7 @@ var app = new Vue({
   data: {
     loading: false,
     cacheKey: "goindex_options",
-    versions: ["2.0.5", "2.0.0", "1.x"],
+    versions: ["2.0.5"],
     remember: false,
     indexConfig: {
       authCode: "",
