@@ -102,12 +102,16 @@ var app = new Vue({
       );
     },
     getCache() {
-      let data = localStorage.getItem(this.cacheKey);
-      if (data) {
-        let options = JSON.parse(data);
-        this.options = options.options;
-        this.indexConfig = options.indexConfig;
-        this.remember = options.remember;
+      try {
+        let data = localStorage.getItem(this.cacheKey);
+        if (data) {
+          let options = JSON.parse(data);
+          this.options = options.options;
+          this.indexConfig = options.indexConfig;
+          this.remember = options.remember;
+        }
+      } catch (e) {
+        localStorage.removeItem("goindex_options");
       }
     }
   }
