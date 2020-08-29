@@ -17,7 +17,7 @@ var app = new Vue({
   data: {
     loading: false,
     cacheKey: "goindex_options",
-    versions: ["2.0.5"],
+    versions: ["2.0.8"],
     remember: false,
     indexConfig: {
       authCode: "",
@@ -34,15 +34,12 @@ var app = new Vue({
       enable_cors_file_down: false
     },
     options: {
-      version: "2.0.5",
+      version: "2.0.8",
       languages: "en",
       render: {
         head_md: false,
         readme_md: false,
         desc: false
-      },
-      player: {
-        api: "https://api.jsonpop.cn/demo/blplyaer/?url="
       }
     },
     result: {
