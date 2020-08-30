@@ -87,7 +87,7 @@ app.post("/getCode", async (req, res) => {
     /\/\/ =======Options START=======([\s\S]*)\/\/ =======Options END=======/
   )[0];
   code = code.replace(options, "");
-  // options = replace(options, "refresh_token", r.refresh_token);
+  options = replace(options, "refresh_token", r.refresh_token);
   options = options.replace(/var themeOptions = \{([\s\S]*)\}/, (p1) => {
     return replaceAll(p.options, p1);
   });
