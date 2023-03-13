@@ -80,7 +80,9 @@ app.post("/getCode", async (req, res) => {
   }
   let code = await xf
     .get(
-      `https://raw.githubusercontent.com/Aicirou/goindex-theme-acrou/v${p.options.version}/go2index/index.js`
+      `https://raw.githubusercontent.com/ivanarya007/G-Index/main/v${p.options.version}/go2index/index.js`
+      
+      https://raw.githubusercontent.com/ivanarya007/G-Index/main/go2index/index.js
     )
     .text();
   let options = code.match(
